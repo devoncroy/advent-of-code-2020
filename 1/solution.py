@@ -1,3 +1,16 @@
+'''
+https://adventofcode.com/2020/day/1
+
+Solution 1:
+iterates through the list of numbers, checking if the comimentry number summing to 2020 is also present
+takes advantage of dictionary datastructure to avoid iterating through all the numbers more than once
+
+Solution 2
+iterates through a sorted list of numbers in descending order
+for each number x iterates through all the numbers less than x checking to see if the remainder of 2020 - x - y exists in the list
+requires only n(n+1) / 2 iterations at worst case
+'''
+
 def loadData():
     with open('1.txt', 'rb') as f:
         data = {int(x.strip()):None for c,x in enumerate(f)}

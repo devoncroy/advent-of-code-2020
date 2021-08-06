@@ -1,3 +1,14 @@
+'''
+https://adventofcode.com/2020/day/20
+
+Solution 1:
+determines exterior tiles by looking for the ones with unique edges (makes assumption that exterior edges are always unique)
+determines the four corners from exterior tiles by looking for tiles that have 2 exterior edges
+
+Solution 2:
+not implemented
+'''
+
 def loadData():
     data = {}
     with open('20.txt', 'rb') as f:

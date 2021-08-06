@@ -1,3 +1,14 @@
+'''
+https://adventofcode.com/2020/day/2
+
+Solution 1:
+iterates through each rule, password pair returns count of valid passwords
+runs in n time, nothing fancy
+
+Solution 2:
+identical to solution 1, just uses different definition of rule
+'''
+
 def loadData():
     data = []
     with open('2.txt', 'rb') as f:
